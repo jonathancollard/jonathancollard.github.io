@@ -1,0 +1,524 @@
+
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+    <title>Jonathan Collard - Développeur Front-End junior</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+    <style media="print">
+        body {
+            margin: 1.5cm;
+            font-size: 14px;
+        }
+    </style>
+    <style type="text/css">
+        @import url(
+        https://fonts.googleapis.com/css?family=Lato:300,400,700
+        );
+        body {
+            background: #fff;
+            font-family: Lato, sans-serif;
+            font-weight: 300;
+            color: #333;
+            margin: 0 0 80px;
+            font-size: 15px;
+        }
+        a,
+        .phone {
+            color: rgba(50, 0, 248, 0.82);
+        }
+        a:focus,
+        a:hover {
+            color: #333;
+            text-decoration: none;
+        }
+        strong {
+            font-size: smaller;
+            font-weight: 400;
+            color: #333;
+            text-transform: uppercase;
+        }
+        p {
+            line-height: 1.5;
+            margin: 0 0 .5em 0;
+        }
+        p + p {
+            margin-top: 10px;
+        }
+        h1,
+        h2,
+        h3,
+        h4 {
+            margin-top: 0;
+            font-weight: 300;
+            color: #555;
+        }
+        section {
+            margin-top: 15px;
+        }
+        ul, ol {
+            padding-left: 21px;
+        }
+        li {
+            line-height: 1.8;
+            list-style: none;
+        }
+        li:before {
+            content: "\f052";
+            float: left;
+            font: 16px Octicons;
+            margin-top: 6px;
+            margin-left: -20px;
+            opacity: .1;
+            position: absolute;
+        }
+        blockquote {
+            border-left: 5px solid #e7e9ec;
+            font-size: 14px;
+        }
+        em {
+            color: #666;
+            font-weight: 300;
+            font-style: normal;
+        }
+        h4 span:first-child {
+            color: #333;
+            font-weight: 400;
+        }
+        .container {
+            max-width: 750px;
+            padding: 0 30px;
+        }
+        .col-sm-6 {
+            margin-bottom: 10px;
+        }
+        .col-sm-12 h4 {
+            margin-top: 12px;
+        }
+        .col-sm-12 + .col-sm-12 {
+            margin-top: 30px;
+        }
+        #header {
+            padding: 50px 0 25px;
+            /*margin-bottom: 25px;*/
+        }
+        #header h2 {
+            color: #95a5a6;
+            font-size: 24px;
+        }
+        #content h3 {
+            color: #555;
+            font-size: 26px;
+            margin-top: -4px;
+        }
+        #content aside {
+            text-align: right;
+            padding-right: 30px;
+        }
+        #profiles .network {
+            text-transform: capitalize;
+        }
+        #work .position,
+        #volunteer .position {
+            font-weight: 400;
+            margin-bottom: 8px;
+        }
+        #education .area {
+            font-weight: 400;
+        }
+        #education .area:before {
+            content: "\f0d7";
+            font: 16px Octicons;
+            margin-right: 6px;
+        }
+        #education .studyType {
+            margin-left: 25px;
+        }
+        #awards .summary,
+        #publications .summary {
+            margin-top: 8px;
+        }
+        #publications .website a:before {
+            content: attr(href);
+        }
+
+        @media (min-width: 480px) {
+            .strike-through {
+                border-top: 1px solid #f4f6f6;
+                height: 20px;
+                margin-top: 12px;
+                margin-bottom: -2px;
+                position: relative;
+            }
+            .strike-through span,
+            .strike-through a {
+                background: #fff;
+                position: absolute;
+            }
+            .strike-through span:first-child {
+                padding-right: 20px;
+                margin-top: -12px;
+            }
+            .strike-through span + span {
+                font-size: 14px;
+                margin-top: -10px;
+                padding-left: 20px;
+                right: 0;
+            }
+        }
+        @media (max-width: 768px) {
+            .col-sm-6:last-child {
+                margin-bottom: 0px;
+            }
+            #content aside {
+                margin-bottom: 20px;
+                padding-right: 0;
+                text-align: left;
+            }
+            #publications .website a:before {
+                content: "View publication";
+            }
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 28px;
+            }
+            #header h2 {
+                font-size: 24px;
+            }
+            #content h3 {
+                font-size: 20px;
+            }
+            h4 {
+                font-size: 16px;
+            }
+            .date {
+                font-size: 14px;
+                margin-bottom: 5px;
+            }
+            .strike-through span:first-child {
+                margin-bottom: 7px;
+            }
+            .strike-through span {
+                display: block;
+            }
+            #header {
+                /*margin-bottom: 10px;*/
+                padding: 30px 0 0;
+            }
+            #actions {
+                display: none;
+            }
+        }
+
+        @media print {
+            body {
+                font-size: 12px;
+            }
+            a[href]:after {
+                display: none;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            #header h2 {
+                font-size: 18px;
+                margin-top: -8px;
+            }
+            h4 {
+                font-size: 13px;
+            }
+            #header {
+                padding: 0;
+            }
+
+            #content aside {
+                margin: 0 !important;
+            }
+
+            #content h3 {
+                font-size: 16px;
+                margin-top: 0;
+            }
+
+            blockquote {
+                border: 0;
+                border-left: 3px solid #e7e9ec;
+                font-size: 12px;
+            }
+
+            li:before {
+                font: 10px Octicons;
+            }
+
+            .strike-through {
+                border-top-color: transparent;
+            }
+            .strike-through span + span {
+                font-size: 12px;
+            }
+            .col-sm-push-3 {
+                left: 25%;
+            }
+            .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+                float: left;
+            }
+            .col-sm-12 {
+                width: 100%;
+            }
+            .col-sm-11 {
+                width: 91.66666666666666%;
+            }
+            .col-sm-10 {
+                width: 83.33333333333334%;
+            }
+            .col-sm-9 {
+                width: 75%;
+            }
+            .col-sm-8 {
+                width: 66.66666666666666%;
+            }
+            .col-sm-7 {
+                width: 58.333333333333336%;
+            }
+            .col-sm-6 {
+                width: 50%;
+            }
+            .col-sm-5 {
+                width: 41.66666666666667%;
+            }
+            .col-sm-4 {
+                width: 33.33333333333333%;
+            }
+            .col-sm-3 {
+                width: 25%;
+            }
+            .col-sm-2 {
+                width: 16.666666666666664%;
+            }
+            .col-sm-1 {
+                width: 8.333333333333332%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<header id="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-9 col-sm-push-3">
+                <h1>
+                    Jonathan Collard
+                </h1>
+                <h2>
+                    Développeur Front-End junior
+                </h2>
+            </div>
+        </div>
+    </div>
+</header>
+<div id="content" class="container">
+    <section id="contact" class="row">
+        <aside class="col-sm-3">
+            <h3>Contact</h3>
+        </aside>
+        <div class="col-sm-9">
+            <div class="row">
+                <div class="col-sm-6">
+                    <strong>Courriel</strong>
+                    <div class="email"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b8ddd5d1ddc8ddd4d4ddccd1ddcaf8d0d7ccd5d9d1d496dbd7d5">jonath2897@gmail.com</a></div>
+                </div>
+                <div class="col-sm-6">
+                    <strong>Téléphone</strong>
+                    <div class="phone">(418)719-5905</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="education" class="row">
+    <aside class="col-sm-3">
+        <h3>Études</h3>
+    </aside>
+    <div class="col-sm-9">
+        <div class="row">
+            <div class="col-sm-12">
+                <h4 class="strike-through">
+                    <span>Cégep Ste-Foy</span>
+                    <span class="date">Août 2017 — ...</span>
+                </h4>
+                <div class="area">
+                    Techniques d'intégration multimédia - Web et apps
+                </div>
+                <div class="studyType">
+                    Diplôme d'études collégiales
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <h4 class="strike-through">
+                    <span>Cégep d'Alma</span>
+                    <span class="date">Août 2015</span>
+                </h4>
+                <div class="area">
+                    Technique en Technologie Sonore
+                </div>
+                <div class="studyType">
+                    Diplôme d'études collégiales
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <h4 class="strike-through">
+                    <span>Cégep d'Alma</span>
+                    <span class="date">Août 2014 — 2015</span>
+                </h4>
+                <div class="area">
+                    Tremplin DEC
+                </div>
+                <div class="studyType">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section id="work" class="row">
+    <aside class="col-sm-3">
+        <h3>Expériences de travail</h3>
+    </aside>
+    <div class="col-sm-9">
+        <div class="row">
+            <div class="col-sm-12">
+                <h4 class="strike-through">
+                    <span>Walmart</span>
+                    <span class="date">Mai 2016 — ...</span>
+                </h4>
+                <div class="website pull-right">
+
+                </div>
+                <div class="position">
+                    Associé des fruits et légumes
+                </div>
+                <div class="summary">
+                    <p></p>
+                </div>
+                <ul class="highlights">
+                    <li class="bullet">Servir et conseiller la clientèle</li>
+                    <li class="bullet">Recevoir et placer la marchandise</li>
+                    <li class="bullet">Formation d'employés</li>
+                    <li class="bullet">Entretien du rayon</li>
+                </ul>
+            </div>
+            <div class="col-sm-12">
+                <h4 class="strike-through">
+                    <span>Rose & Basilic, Alma</span>
+                    <span class="date">2015 — Mai 2016</span>
+                </h4>
+                <div class="website pull-right">
+                    <a href=""></a>
+                </div>
+                <div class="position">
+                    Commis
+                </div>
+                <div class="summary">
+                    <p></p>
+                </div>
+                <ul class="highlights">
+                    <li class="bullet">Effectuer des tâches diverses dans le restaurant</li>
+                    <li class="bullet">Entretien des lieux</li>
+                    <li class="bullet">Laver la vaiselle</li>
+                    <li class="bullet">Formation d'employés</li>
+                    <li class="bullet">Aide cuisinier</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+    <section id="skills" class="row">
+        <aside class="col-sm-3">
+            <h3>Compétences</h3>
+        </aside>
+        <div class="col-sm-9">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="name">
+                        <h4>Développement web</h4>
+                    </div>
+                    <ul class="keywords">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <div class="name">
+                        <h4>Traitement des médias</h4>
+                    </div>
+                    <ul class="keywords">
+                        <li>Photoshop</li>
+                        <li>Illustrator</li>
+                        <li>After Effects</li>
+                        <li>Audition</li>
+                        <li>Sketch</li>
+                        <li>Axure RP</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="languages" class="row">
+        <aside class="col-sm-3">
+            <h3>Langues</h3>
+        </aside>
+        <div class="col-sm-9">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="language">
+                        <strong>Anglais parlé / écrit</strong>
+                    </div>
+                    <div class="fluency">
+                        Intermédiaire
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="interests" class="row">
+        <aside class="col-sm-3">
+            <h3>Intérêts</h3>
+        </aside>
+        <div class="col-sm-9">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="name">
+                        <h4></h4>
+                    </div>
+                    <ul class="keywords">
+                        <li>Technologie</li>
+                        <li>Sport</li>
+                        <li>Musique</li>
+                        <li>Skateboard</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="references" class="row">
+        <aside class="col-sm-3">
+            <h3>Références</h3>
+        </aside>
+        <div class="col-sm-9">
+            <div class="row">
+                <div class="col-sm-12">
+                    <blockquote class="reference">
+                        <p>Elles vous seront fournis sur demande.</p>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/d07b1474/cloudflare-static/email-decode.min.js"></script></body>
+</html>
