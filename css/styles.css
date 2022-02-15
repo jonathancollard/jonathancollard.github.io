@@ -96,6 +96,17 @@ body, html {
   flex-wrap: wrap;
   padding-bottom: 30px;
 }
+.img_projet{
+  width: 550px;
+  height: 310px;
+}
+
+@media screen and (max-width: 600px) {
+  .img_projet{
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
 
 .img_content{
   position: relative;
@@ -127,6 +138,12 @@ body, html {
   width: 80%;
   transform: translate(-50%, -50%);
   text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+  .over_text{
+    font-size: 13px;
+  }
 }
 
 /*****************************************************/
